@@ -165,22 +165,19 @@ api.reopenWidget('search-menu', {
   }
 })
 
-api.decorateWidget('home-logo:after', function(helper) {
-  const header = helper.widget.parentWidget.parentWidget,
+api.decorateWidget('home-search:before', function(helper) {
+  const header = helper.widget,
         appController = helper.register.lookup('controller:application'),
         showHeaderSearch = appController.get('showHeaderSearch'),
         searchMenuVisible = header.state.searchVisible;
 
-  if (!searchMenuVisible && showHeaderSearch && !header.attrs.topic && !helper.widget.site.mobileView) {
     $('.d-header').addClass('header-search-enabled');
 
     return helper.attach('search-menu', {
       contextEnabled: header.state.contextEnabled,
       formFactor: 'header'
     });
-  } else {
-    $('.d-header').removeClass('header-search-enabled');
-  }
+
 })
 
 const wantsNewWindow = require('discourse/lib/intercept-click').wantsNewWindow;
