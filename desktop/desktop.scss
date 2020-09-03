@@ -70,7 +70,7 @@ nav.first-top-menu > div.wrap {
 
 div.search-menu > div.search-context {
     background-color: $secondary;
-    display: flex;
+//    display: flex;
     height: 22px;
     margin-left: 3px;
     margin-right: 3px;
@@ -89,6 +89,7 @@ div.search-menu > div.search-context {
         line-height: 1.2;
         position: absolute;
         right: 3px;
+        background-color: $secondary;
     }
 }
 
