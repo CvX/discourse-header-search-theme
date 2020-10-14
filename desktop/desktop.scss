@@ -126,3 +126,8 @@ div.search-input {
 div.search-result-topic > ul.list > li.item:hover {
 background-color: $highlight-low !important
 }
+
+// Add slight padding for the highlights
+div.search-result-topic > ul.list > li.item {
+padding: 5px;
+}
