@@ -121,3 +121,8 @@ div.search-input {
      font-style: italic;
     }
 }
+
+// Add highlight to the search results
+div.search-result-topic > ul.list > li.item:hover {
+background-color: $highlight-low !important
+}
