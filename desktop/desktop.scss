@@ -16,7 +16,7 @@ div.search-menu {
     
     div.results {
     background-color: $secondary;
-    margin-top: 0px !important;
+    margin-top: 22px !important;
     padding-top: 10px;
     padding-right: 25px;
     padding-left: 25px;
@@ -78,8 +78,9 @@ div.search-menu > div.search-context {
     padding-top: 2px;
     padding-right: 0px;
     position: relative;
-    border-left: 1px solid $primary-low;
-    border-right: 1px solid $primary-low;
+    border: 1px solid $primary-low;
+    float: right;
+    width: 300px;
     
     label {
         margin-left: 3px;
