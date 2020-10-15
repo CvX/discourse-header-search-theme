@@ -71,7 +71,6 @@ nav.first-top-menu > div.wrap {
 
 div.search-menu > div.search-context {
     background-color: $secondary;
-//    display: flex;
     height: 22px;
     margin-left: 3px;
     margin-right: 3px;
@@ -80,11 +79,13 @@ div.search-menu > div.search-context {
     position: relative;
     border: 1px solid $primary-low;
     float: right;
-    width: 300px;
+    width: 450px;
+    display: flex;
+}
     
     label {
         margin-left: 3px;
-        margin-right: 3px;
+        margin-right: 5px;
     }
     
     a.widget-link {
