@@ -15,7 +15,7 @@ div.search-menu {
     
     
     div.results {
-    background-color: $secondary;
+    background-color: var(--secondary);
     margin-top: 22px !important;
     padding-top: 10px;
     padding-right: 25px;
@@ -70,14 +70,14 @@ nav.first-top-menu > div.wrap {
 
 
 div.search-menu > div.search-context {
-    background-color: $secondary;
+    background-color: var(--secondary);
     height: 22px;
     margin-left: 3px;
     margin-right: 3px;
     padding-top: 2px;
     padding-right: 0px;
     position: relative;
-    border: 1px solid $primary-low;
+    border: 1px solid var(--primary-low);
     float: right;
     width: 450px;
     display: flex;
@@ -92,7 +92,7 @@ div.search-menu > div.search-context {
         line-height: 1.2;
         position: absolute;
         right: 3px;
-        background-color: $secondary;
+        background-color: var(--secondary);
     }
 }
 
@@ -103,30 +103,30 @@ div.search-input {
     input#search-term {
     margin-bottom: 1px !important;
     width: 100%;
-    background-color: $primary-medium;
-    color: $secondary !important;
+    background-color: var(--primary-medium);
+    color: var(--secondary) !important;
     }
     
     ::placeholder {
-        color: $primary-high;
+        color: var(--primary-high);
         font-style: italic;
         opacity: 1;
     }
     
     ::-ms-input-placeholder { /* Microsoft Edge */
-    color: $primary-high !important;
+    color: var(--primary-high) !important;
     font-style: italic;
     }
     
     :-ms-input-placeholder {  /*Internet Explorer 10-11 */
-     color: $primary-high !important;
+     color: var(--primary-high) !important;
      font-style: italic;
     }
 }
 
 // Add highlight to the search results
 div.search-result-topic > ul.list > li.item:hover {
-background-color: $highlight-low !important
+background-color: var(--highlight-low) !important
 }
 
 // Add slight padding for the highlights
